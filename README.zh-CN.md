@@ -1,4 +1,13 @@
-# z_pair
+<div align="center">
+  <img alt="z_pair" width="120" height="120" src="./assets/logo/logo_1000.png">
+  <h1>z_pair</h1>
+  <span><a href="./README.md">English</a> | 中文</span>
+</div>
+
+<div align="center">
+  <br/>
+  <a href="" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=9433615761f548cf9648434c670cd85b&claim_uid=249cPWvjfNmU7dp" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+</div>
 
 一个基于Unix域套接字的轻量级高效线程通知库，专为Linux系统设计。
 
@@ -6,8 +15,12 @@
 
 **这是一个简单的Linux线程通知库，使用Unix域套接字提供可靠的线程同步机制。** 😊
 
-## 💻 工作原理
-该库使用Unix域套接字对来实现线程间的非阻塞通知机制。当发送信号时，会向套接字写入一个字节，等待的线程可以通过select()高效地检测这个信号。
+## 💻 架构图
+下图展示了z_pair的内部工作原理。该库使用Unix域套接字对来实现线程间的非阻塞通知机制。当发送信号时，会向套接字写入一个字节，等待的线程可以通过select()高效地检测这个信号。
+
+<div align="center">
+  <img alt="z_pair" src="./assets/logic_block_diagram.png">
+</div>
 
 ## 🚀 快速开始
 

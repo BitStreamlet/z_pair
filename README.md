@@ -1,4 +1,13 @@
-# z_pair
+<div align="center">
+  <img alt="z_pair" width="120" height="120" src="./assets/logo/logo_1000.png">
+  <h1>z_pair</h1>
+  <span>English | <a href="./README.zh-CN.md">中文</a></span>
+</div>
+
+<div align="center">
+  <br/>
+  <a href="" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=9433615761f548cf9648434c670cd85b&claim_uid=249cPWvjfNmU7dp" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+</div>
 
 A lightweight and efficient inter-thread notification library based on Unix domain sockets for Linux systems.
 
@@ -6,8 +15,12 @@ A lightweight and efficient inter-thread notification library based on Unix doma
 
 **This is a simple Linux inter-thread notification library that provides a reliable mechanism for thread synchronization using Unix domain sockets.** 😊
 
-## 💻 How It Works
-The library uses Unix domain socket pairs to implement a non-blocking notification mechanism between threads. When a signal is sent, it writes a byte to the socket, and waiting threads can efficiently detect this signal using select().
+## 💻 Diagram
+The following diagram shows how z_pair works internally. The library uses Unix domain socket pairs to implement a non-blocking notification mechanism between threads. When a signal is sent, it writes a byte to the socket, and waiting threads can efficiently detect this signal using select().
+
+<div align="center">
+  <img alt="z_pair" src="./assets/logic_block_diagram.png">
+</div>
 
 ## 🚀 Getting Started
 
